@@ -107,3 +107,20 @@ The application was tested in Kali Linux running under WSL 2.
 
 ## Conclusion
 The Network Diagnostic Toolkit successfully performs basic network diagnostics and helps identify common connectivity issues. It provides a simple command-line interface for checking network configuration, internet access, DNS resolution, routing information, and TCP port connectivity.
+
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/main-menu.png)
+
+### IP Configuration
+![IP Configuration](screenshots/ip-configuration.png)
+
+### Internet and DNS Tests
+![Internet and DNS](screenshots/internet-dns.png)
+
+### Automatic Diagnosis
+![Automatic Diagnosis](screenshots/auto-diagnosis.png)
+
+### Final Diagnostic Report
+![Final Report](screenshots/final-report.png)
