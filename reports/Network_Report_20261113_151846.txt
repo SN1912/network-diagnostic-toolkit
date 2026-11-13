@@ -1,0 +1,108 @@
+=======================================================
+       NETWORK DIAGNOSTIC TOOLKIT REPORT
+=======================================================
+
+Date and Time: 2026-11-13 15:18:47.000793
+Computer Name: DESKTOP-SP5T1TS
+Operating System: Linux
+
+-------------------------------------------------------
+DIAGNOSTIC TEST RESULTS
+-------------------------------------------------------
+
+
+IP Configuration
+----------------------------------------
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host proto kernel_lo 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:c5:9e:a8 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.196.114/20 brd 172.20.207.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fec5:9ea8/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+
+
+Default Gateway
+----------------------------------------
+Default Gateway: 172.20.192.1
+
+
+Internet Connectivity
+----------------------------------------
+{
+    "status": "CONNECTED",
+    "details": "PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.\n64 bytes from 1.1.1.1: icmp_seq=1 ttl=51 time=67.9 ms\n64 bytes from 1.1.1.1: icmp_seq=2 ttl=51 time=44.6 ms\n64 bytes from 1.1.1.1: icmp_seq=3 ttl=51 time=96.6 ms\n64 bytes from 1.1.1.1: icmp_seq=4 ttl=51 time=60.9 ms\n\n--- 1.1.1.1 ping statistics ---\n4 packets transmitted, 4 received, 0% packet loss, time 3006ms\nrtt min/avg/max/mdev = 44.551/67.479/96.550/18.804 ms"
+}
+
+
+DNS Resolution
+----------------------------------------
+{
+    "status": "SUCCESS",
+    "domain": "google.com",
+    "ips": [
+        "142.250.118.100",
+        "142.250.118.101",
+        "142.250.118.102",
+        "142.250.118.113",
+        "142.250.118.138",
+        "142.250.118.139",
+        "2404:6800:4013:813::65",
+        "2404:6800:4013:813::66",
+        "2404:6800:4013:813::71",
+        "2404:6800:4013:813::8a"
+    ]
+}
+
+
+Automatic Diagnosis
+----------------------------------------
+{
+    "overall_status": "HEALTHY",
+    "problems_detected": 0,
+    "problems": [],
+    "message": "No network problems detected by the performed tests."
+}
+
+
+Network Route
+----------------------------------------
+{
+    "destination": "google.com",
+    "status": "PARTIAL ROUTE - DESTINATION NOT CONFIRMED",
+    "responding_hops": 2,
+    "timeout_hops": 13,
+    "destination_reached": false,
+    "details": "traceroute to google.com (142.250.118.113), 15 hops max, 60 byte packets\n 1  172.20.192.1  0.690 ms  0.643 ms  0.632 ms\n 2  10.231.193.24  4.707 ms  8.322 ms  7.144 ms\n 3  * * *\n 4  * * *\n 5  * * *\n 6  * * *\n 7  * * *\n 8  * * *\n 9  * * *\n10  * * *\n11  * * *\n12  * * *\n13  * * *\n14  * * *\n15  * * *"
+}
+
+
+TCP Port Test
+----------------------------------------
+{
+    "server": "google.com",
+    "port": 443,
+    "status": "OPEN"
+}
+
+=======================================================
+          FINAL NETWORK HEALTH SUMMARY
+=======================================================
+
+Tests Performed: 7
+Successful Tests: 6
+Failed Tests: 0
+Inconclusive Tests: 1
+
+Overall Status: CONNECTIVITY AVAILABLE
+
+=======================================================
+             END OF REPORT
+=======================================================
